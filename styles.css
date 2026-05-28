@@ -494,7 +494,11 @@ body{
   body{
     overflow-x:hidden;
   }
-
+  .hero{
+    background-size:140%;
+    background-position:center top;
+  }
+  
   h1{
     font-size:72px;
     line-height:0.95;
