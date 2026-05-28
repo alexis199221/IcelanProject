@@ -20,7 +20,7 @@ body{
     rgba(2,8,15,.94)
   );
 
-  backdrop-filter:blur(2px);
+  backdrop-filter:none;
   z-index:-1;
 }
 
@@ -34,10 +34,9 @@ body{
     rgba(1,8,15,.92)
   ),
 
-  url('https://miodymanuka.pl/public/assets//islandia-111.jpg')
+  url('https://4kwallpapers.com/images/walls/thumbs_3t/9658.jpg')
   center/cover no-repeat;
 
-  background-attachment:fixed;
 }
 
 .center-panel h1{
@@ -317,7 +316,7 @@ body{
   border:
   1px solid rgba(120,220,255,.14);
 
-  backdrop-filter:blur(18px);
+  backdrop-filter:none;
 
   transition:.4s;
 
@@ -426,8 +425,6 @@ body{
   transition:1s ease;
 }
 
-/* DARK OVERLAY */
-
 .weather-card::before{
 
   content:"";
@@ -444,8 +441,6 @@ body{
 
   z-index:1;
 }
-
-/* CONTENT ABOVE IMAGE */
 
 .weather-card *{
 
@@ -493,25 +488,57 @@ body{
 }const card =
 document.querySelector('.weather-bg{
 
+  background-size:cover;
 
-if(weatherCode >= 71){
+  background-position:center center;
 
-  card.style.backgroundImage =
-  "url('snow.jpeg')";
-} 
-else if(weatherCode >= 51){
+  background-repeat:no-repeat;
 
-  card.style.backgroundImage =
-  "url('rain.jpg')";
+  aspect-ratio:1/1;
+
+  min-height:320px;
 }
+@media(max-width:768px){
 
-else if(weatherCode >= 1){
+  body{
+    overflow-x:hidden;
+  }
 
-  card.style.backgroundImage =
-  "url('cloudy.jpeg')";
-}
-else{
+  h1{
+    font-size:72px;
+    line-height:0.95;
+  }
 
-  card.style.backgroundImage =
-  "url('sunny.jpg')";
+  .description{
+    font-size:18px;
+    padding:0 20px;
+  }
+
+  .hero{
+    padding-top:40px;
+  }
+
+  .weather-card{
+
+    width:85%;
+
+    margin:40px auto;
+
+    min-height:260px;
+
+    border-radius:32px;
+
+    background-position:center;
+
+    background-size:cover;
+  }
+
+  .weather-card h2{
+    font-size:72px;
+  }
+
+  .btn{
+    width:82%;
+    margin:12px auto;
+  }
 }
