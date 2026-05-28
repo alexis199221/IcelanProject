@@ -483,23 +483,11 @@ body{
   z-index:1;
 }
 
-.weather-card *{
+.weather-card img{
 
   position:relative;
 
   z-index:2;
-}const card =
-document.querySelector('.weather-bg{
-
-  background-size:cover;
-
-  background-position:center center;
-
-  background-repeat:no-repeat;
-
-  aspect-ratio:1/1;
-
-  min-height:320px;
 }
 @media(max-width:768px){
 
