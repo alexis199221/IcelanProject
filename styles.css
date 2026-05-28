@@ -33,10 +33,10 @@ body{
     rgba(1,8,15,.45),
     rgba(1,8,15,.92)
   ),
-
-  url('https://4kwallpapers.com/images/walls/thumbs_3t/9658.jpg')
+  url('lagoon.jpg')
   center/cover no-repeat;
 
+  background-attachment:fixed;
 }
 
 .center-panel h1{
