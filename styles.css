@@ -33,8 +33,11 @@ body{
     rgba(1,8,15,.45),
     rgba(1,8,15,.92)
   ),
-  url('lagoon.jpg')
-  center/cover no-repeat;
+  url('lagoon.jpg');
+
+  background-size:cover;
+  background-position:top center;
+  background-repeat:no-repeat;
 
   background-attachment:fixed;
 }
