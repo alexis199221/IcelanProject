@@ -426,8 +426,6 @@ body{
   transition:1s ease;
 }
 
-/* DARK OVERLAY */
-
 .weather-card::before{
 
   content:"";
@@ -444,8 +442,6 @@ body{
 
   z-index:1;
 }
-
-/* CONTENT ABOVE IMAGE */
 
 .weather-card *{
 
@@ -493,6 +489,17 @@ body{
 }const card =
 document.querySelector('.weather-bg{
 
+  background-size:cover;
+
+  background-position:center center;
+
+  background-repeat:no-repeat;
+
+  aspect-ratio:1/1;
+
+  min-height:320px;
+}
+
 
 if(weatherCode >= 71){
 
@@ -514,4 +521,18 @@ else{
 
   card.style.backgroundImage =
   "url('sunny.jpg')";
+}
+@media(max-width:768px){
+
+  .weather-card{
+
+    min-height:260px;
+
+    border-radius:32px;
+  }
+
+  .weather-card h2{
+
+    font-size:72px;
+  }
 }
