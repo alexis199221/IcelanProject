@@ -20,7 +20,7 @@ body{
     rgba(2,8,15,.94)
   );
 
-  backdrop-filter:blur(2px);
+  backdrop-filter:none;
   z-index:-1;
 }
 
