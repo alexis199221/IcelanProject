@@ -1,0 +1,517 @@
+
+body{
+  margin:0;
+  font-family:'Inter',sans-serif;
+  background:#03070d;
+  color:rgb(156, 187, 216);
+  overflow-x:hidden;
+}
+
+.overlay{
+  position:fixed;
+  inset:0;
+  background:
+  radial-gradient(circle at top,
+  rgba(120,220,255,.08),
+  transparent 40%),
+
+  linear-gradient(
+    rgba(2,8,15,.55),
+    rgba(2,8,15,.94)
+  );
+
+  backdrop-filter:blur(2px);
+  z-index:-1;
+}
+
+.hero{
+  min-height:100vh;
+  padding:40px 70px;
+
+  background:
+  linear-gradient(
+    rgba(1,8,15,.45),
+    rgba(1,8,15,.92)
+  ),
+
+  url('https://miodymanuka.pl/public/assets//islandia-111.jpg')
+  center/cover no-repeat;
+
+  background-attachment:fixed;
+}
+
+.center-panel h1{
+  font-size:140px;
+  line-height:.88;
+  margin:0;
+
+  font-family:'Cormorant Garamond',serif;
+  font-weight:600;
+
+  text-shadow:
+    0 10px 40px rgba(0,0,0,.6),
+    0 0 30px rgba(120,220,255,.15);
+}
+
+.center-panel h1 span{
+  color:#a7ecff;
+}
+
+.regions-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:34px;
+  align-items:stretch;
+}
+
+.region-box,
+.assistant-box{
+
+  min-height:320px;
+  height:320px;
+
+  background:
+  linear-gradient(
+    180deg,
+    rgba(14,24,36,.88),
+    rgba(5,10,18,.95)
+  );
+
+  border:
+  1px solid rgba(170,240,255,.14);
+
+  border-radius:34px;
+
+  padding:34px;
+
+  backdrop-filter:blur(20px);
+
+  transition:.55s ease;
+
+  cursor:pointer;
+
+  box-shadow:
+    0 0 40px rgba(0,0,0,.45),
+    inset 0 1px 0 rgba(255,255,255,.05);
+
+  overflow:hidden;
+
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-start;
+
+  position:relative;
+}
+.region-box::before,
+.assistant-box::before{
+  content:"";
+  position:absolute;
+  inset:0;
+
+  background:
+  linear-gradient(
+    140deg,
+    rgba(120,220,255,.08),
+    transparent 35%
+  );
+
+  pointer-events:none;
+}
+
+.region-box.active{
+  height:auto;
+  min-height:320px;
+}
+
+
+.region-dropdown{
+  max-height:0;
+  overflow:hidden;
+  opacity:0;
+
+  transition:
+    max-height .7s ease,
+    opacity .45s ease,
+    margin-top .45s ease;
+
+  margin-top:0;
+}
+
+.region-box.active .region-dropdown{
+  max-height:1400px;
+  opacity:1;
+  margin-top:28px;
+}
+
+.region-box:hover,
+.assistant-box:hover{
+  transform:
+    translateY(-10px)
+    scale(1.015);
+
+  border-color:#9ae7ff;
+
+  box-shadow:
+    0 0 60px rgba(120,220,255,.14),
+    0 20px 60px rgba(0,0,0,.5);
+}
+
+
+.region-box h3,
+.assistant-box h3{
+  font-size:46px;
+  margin-bottom:18px;
+
+  font-family:'Cormorant Garamond',serif;
+
+  line-height:1;
+  letter-spacing:1px;
+
+  text-shadow:
+    0 0 18px rgba(120,220,255,.12);
+}
+
+.assistant-box{
+
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+
+  background:
+  linear-gradient(
+    160deg,
+    rgba(120,220,255,.16),
+    rgba(5,12,22,.96)
+  );
+}
+
+.assistant-box::after{
+  content:"";
+  position:absolute;
+
+  width:220%;
+  height:220%;
+
+  background:
+  linear-gradient(
+    120deg,
+    transparent 20%,
+    rgba(255,255,255,.08) 50%,
+    transparent 80%
+  );
+
+  transform:rotate(25deg);
+  animation:glacierShine 7s linear infinite;
+}
+
+@keyframes glacierShine{
+  from{
+    transform:
+      translateX(-50%)
+      rotate(25deg);
+  }
+
+  to{
+    transform:
+      translateX(50%)
+      rotate(25deg);
+  }
+}
+
+.region-dropdown a{
+  display:block;
+  margin-bottom:12px;
+
+  color:white;
+  text-decoration:none;
+
+  opacity:.82;
+  transition:.35s;
+}
+
+.region-dropdown a:hover{
+  color:#9ae7ff;
+  transform:translateX(6px);
+}
+
+@media(max-width:1200px){
+
+  .regions-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .center-panel h1{
+    font-size:95px;
+  }
+}
+
+@media(max-width:760px){
+
+  .hero{
+    padding:30px;
+  }
+
+  .regions-grid{
+    grid-template-columns:1fr;
+  }
+
+  .center-panel h1{
+    font-size:64px;
+  }
+
+  .region-box,
+  .assistant-box{
+    min-height:280px;
+    height:280px;
+  }
+}
+.buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 25px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  background: #294347;
+  color: rgb(250, 233, 233);
+  padding: 14px 24px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+  display: inline-block;
+}
+
+.btn:hover {
+  background: #0097a7;
+  transform: translateY(-2px);
+}
+.weather-row{
+
+  display:flex;
+  gap:28px;
+
+  justify-content:center;
+
+  flex-wrap:wrap;
+
+  margin-top:80px;
+}
+
+.weather-card{
+
+  width:260px;
+
+  padding:34px;
+
+  border-radius:30px;
+
+  text-decoration:none;
+
+  color:white;
+
+  background:
+  rgba(8,18,28,.64);
+
+  border:
+  1px solid rgba(120,220,255,.14);
+
+  backdrop-filter:blur(18px);
+
+  transition:.4s;
+
+  box-shadow:
+  0 30px rgba(0,0,0,.35);
+}
+
+.weather-card:hover{
+
+  transform:
+  translateY(-10px);
+
+  border-color:#9ae7ff;
+
+  box-shadow:
+  0 0 50px rgba(120,220,255,.2);
+}
+
+.weather-card span{
+
+  letter-spacing:4px;
+
+  font-size:12px;
+
+  opacity:.7;
+}
+
+.weather-card h2{
+
+  font-size:54px;
+
+  margin:20px 0 10px;
+
+  font-family:'Cormorant Garamond',serif;
+}
+.copyright{
+
+  text-align:center;
+
+  padding:40px;
+
+  color:white;
+}
+.region-box{
+
+  text-align:center;
+}
+#wind{
+
+  font-size:16px;
+
+  margin:0;
+
+  white-space:nowrap;
+
+  opacity:.8;
+}
+.weather-inline{
+
+  display:flex;
+
+  justify-content:center;
+
+  align-items:center;
+
+  gap:12px;
+}.weather-card{
+
+  text-align:center;
+}
+.weather-gif{
+  width:72px;
+
+  height:72px;
+
+  object-fit:contain;
+
+  display:block;
+
+  margin:12px auto 8px;
+}
+.center-panel{
+
+  text-align:center;
+
+  display:flex;
+
+  flex-direction:column;
+
+  align-items:center;
+}
+.weather-card{
+
+  position:relative;
+
+  overflow:hidden;
+
+  background-size:cover;
+
+  background-position:center;
+
+  background-repeat:no-repeat;
+
+  color:white;
+
+  transition:1s ease;
+}
+
+/* DARK OVERLAY */
+
+.weather-card::before{
+
+  content:"";
+
+  position:absolute;
+
+  inset:0;
+
+  background:
+  linear-gradient(
+    rgba(0,0,0,.20),
+    rgba(0,0,0,.60)
+  );
+
+  z-index:1;
+}
+
+/* CONTENT ABOVE IMAGE */
+
+.weather-card *{
+
+  position:relative;
+
+  z-index:2;
+}
+.weather-card{
+
+  background-size:cover;
+
+  background-position:center;
+
+  background-repeat:no-repeat;
+
+  position:relative;
+
+  overflow:hidden;
+
+  min-height:320px;
+}
+
+.weather-card::before{
+
+  content:"";
+
+  position:absolute;
+
+  inset:0;
+
+  background:
+  linear-gradient(
+    rgba(0,0,0,.2),
+    rgba(0,0,0,.6)
+  );
+
+  z-index:1;
+}
+
+.weather-card *{
+
+  position:relative;
+
+  z-index:2;
+}const card =
+document.querySelector('.weather-bg{
+
+
+if(weatherCode >= 71){
+
+  card.style.backgroundImage =
+  "url('snow.jpeg')";
+} 
+else if(weatherCode >= 51){
+
+  card.style.backgroundImage =
+  "url('rain.jpg')";
+}
+
+else if(weatherCode >= 1){
+
+  card.style.backgroundImage =
+  "url('cloudy.jpeg')";
+}
+else{
+
+  card.style.backgroundImage =
+  "url('sunny.jpg')";
+}

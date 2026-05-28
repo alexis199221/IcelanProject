@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <title>Iceland Explorer</title>
+
+  <link
+    rel="preconnect"
+    href="https://fonts.googleapis.com"
+  />
+
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inria+Serif:wght@300;400;700&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet"
+  />
+
+  <link
+    rel="stylesheet"
+    href="styles.css"
+  />
+
+</head>
+
+<body>
+
+  <div class="overlay"></div>
+
+  <header class="hero">
+
+    <nav class="topbar">
+
+      <div class="logo">
+        ICELAND
+      </div>
+
+      <div class="widgets">
+
+        <div class="widget">
+       <span>
+          
+        </div>
+
+      </div>
+
+    </nav>
+
+    <div class="hero-content">
+
+
+    </div>
+
+
+    <div class="center-panel">
+  
+      <p class="subtitle">
+      
+    <br>
+      </p>
+  
+      <h1>
+        Discover
+        <span>Iceland</span>
+      </h1>
+      <p class="description">
+  
+      Everything you need in Iceland - all in one place
+        <div class="buttons">
+        <a href="https://www.parka.is/" target="_blank" class="btn">
+          GET THE PARKA APP
+        </a>
+      
+        <a href="https://adventures.is/" target="_blank" class="btn">
+          BOOK ADVENTURES
+        </a>
+      
+        <a href="https://www.bluecarrental.is/" target="_blank" class="btn">
+          RENT CAR & CAMPER
+        </a>
+      </div>
+      </p>
+  
+    </div>
+  
+    <div class="right-panel">
+    <div class="weather-row">
+
+    <a
+    href="https://vedur.is/"
+    target="_blank"
+    class="weather-card weather-bg">
+
+<span>WEATHER</span>
+
+<div class="weather-inline">
+
+<h2 id="temp">
+Loading...
+</h2>
+
+<span id="wind">
+Wind...
+</span>
+
+</div>
+
+<p id="condition">
+Live Iceland Weather
+</p>
+
+</a>
+<script src="script.js"></script>
+
+    
+  
+    <a
+    href="https://umferdin.is/en"
+    target="_blank"
+    class="weather-card">
+  
+      <span>ROAD CONDITIONS</span>
+  
+      <h2>SAFE TO TRAVEL</h2>
+  
+      <p>Tap To Check Roads</p>
+  
+    </a>
+  
+    <a
+    href="https://vedur.is/"
+    target="_blank"
+    class="weather-card">
+  
+      <span>NORTHERN LIGHTS</span>
+  
+      <h2>KP 2</h2>
+  
+      <p>Tap To Open Aurora Forecast</p>
+  
+    </a>
+  
+  </div>
+  
+
+</header>
+<section class="regions-section">
+
+<h2 class="regions-title"> 
+<p style="text-align: center;">EXPLORE ALL REGIONS</p> 
+</h2>
+
+<div class="regions-grid">
+
+<div class="region-box" onclick="this.classList.toggle('active')">
+
+<div class="region-preview">
+
+  <h3>
+    Capital Region
+  </h3>
+
+  <p>
+    Reykjavík • Kópavogur • Hafnarfjörður
+  </p>
+
+</div>
+
+<div class="region-dropdown">
+
+  <div class="dropdown-section">
+
+    <h4>
+      Restaurants
+    </h4>
+
+    <a
+    href="https://www.dillrestaurant.is/en/home/"
+    target="_blank"
+  >
+    Dill
+  </a>   
+  <a
+  href="https://www.rokrestaurant.is/"
+  target="_blank"
+>Rok
+</a>    <a
+href="https://apotekrestaurant.is/"
+target="_blank"
+>
+Apotek </a>
+
+  </div>
+
+  <div class="dropdown-section">
+
+    <h4>
+      Stores
+    </h4>
+
+    <a
+    href="https://bonus.is/"
+    target="_blank"
+  >
+  Bónus </a>
+  <a
+  href="https://kronan.is/"
+  target="_blank"
+>
+Krónan </a>    <a
+href="https://netto.is/"
+target="_blank"
+>
+Nettó </a>
+
+  </div>
+
+  <div class="dropdown-section">
+
+    <h4>
+      Camping
+    </h4>
+
+    <a
+  href="https://reykjavikcampsite.is/"
+  target="_blank"
+>
+Reykjavík Campsite </a>
+
+  </div>
+
+</div>
+
+</div>
+
+<div class="region-box" onclick="this.classList.toggle('active')">
+
+<div class="region-preview">
+
+  <h3>
+    Reykjanes
+  </h3>
+
+  <p>
+    Keflavík • Grindavík • Garður
+  </p>
+
+</div>
+    <div class="region-dropdown">
+
+    <div class="dropdown-section">
+  
+      <h4>
+        Restaurants
+      </h4>
+  
+      <a
+  href="https://www.antons.is/"
+  target="_blank"
+>
+Antos </a>
+<a
+href="https://www.bryggjan.restaurant/"
+target="_blank"
+>
+Bryggjan </a>
+<a
+href="https://www.gardskagi.com/rostin-restaurant-1"
+target="_blank"
+>
+Röstin Restaurant </a>
+    </div>
+  
+    <div class="dropdown-section">
+  
+      <h4>
+        Attractions
+      </h4>
+  
+      <a
+  href="https://www.bluelagoon.com/"
+  target="_blank"
+>
+Blue Lagoon </a>
+<a
+href="https://www.visitreykjanes.is/en/volcano-eruption/eruption-news"
+target="_blank"
+>
+Volcano Area </a>
+<a
+  href="https://www.visitreykjanes.is/en/place/holmsbergsviti"
+  target="_blank"
+>
+Hólmsbergsviti </a>
+    </div>
+    <div class="dropdown-section">
+
+     
+    </div>
+  
+  </div>
+  </div>
+
+  <div class="region-box" onclick="this.classList.toggle('active')">
+
+  <div class="region-preview">
+
+    <h3>
+      Vesturland
+    </h3>
+
+    <p>
+      Borgarnes • Stykkishólmur
+    </p>
+
+  </div>
+    <div class="region-dropdown">
+
+    <div class="dropdown-section">
+  
+      <h4>
+        Restaurants
+      </h4>
+  
+      <a
+      href="https://www.landnam.is/restaurant/"
+      target="_blank"
+    >
+    Settlement Center </a>     <a
+    href="https://narfeyrarstofa.is/"
+    target="_blank"
+  >
+  Narfeyrarstofa </a>
+    </div>
+  
+    <div class="dropdown-section">
+  
+      <h4>
+        Attractions
+      </h4>
+  
+      <a
+      href="https://snaefellsnes.is/"
+      target="_blank"
+    >
+    Snæfellsnes </a>
+    <a
+    href="https://www.west.is/en/place/kirkjufell-mountain"
+    target="_blank"
+  >
+  Kirkjufell </a>
+  
+    </div>
+  
+    <div class="dropdown-section">
+  
+      <h4>
+        Camping
+      </h4>
+  
+      <a
+  href="https://www.visitstykkisholmur.is/en/campgrounds"
+  target="_blank"
+>
+Stykkishólmur Camping </a>
+  
+    </div>
+  
+  </div>
+  </div>
+
+  <div class="region-box" onclick="this.classList.toggle('active')">
+
+  <div class="region-preview">
+
+    <h3>
+      Vestfirðir
+    </h3>
+
+    <p>
+      Ísafjörður • Bolungarvík
+    </p>
+
+  </div>
+
+  <div class="region-dropdown">
+
+    <div class="dropdown-section">
+
+      <h4>
+        Restaurants
+      </h4>
+
+      <a
+      href="https://einarshusid.is/?utm_source=chatgpt.com"
+      target="_blank"
+    >
+    Einarshúsið  </a>      <a
+      href="https://www.facebook.com/people/H%C3%BAsi%C3%B0/100043332863828/"
+      target="_blank"
+    >
+    Húsið  </a>
+
+    </div>
+
+    <div class="dropdown-section">
+
+      <h4>
+        Attractions
+      </h4>
+
+      <a
+  href="https://www.westfjords.is/en/place/dynjandi"
+  target="_blank"
+>
+Dynjandi  </a>
+      <a
+      href="https://share.google/G47xgqwfIfOQe0tUA"
+      target="_blank"
+    >
+    Látrabjarg  </a>
+    </div>
+
+    <div class="dropdown-section">
+
+      <h4>
+        Camping
+      </h4>
+
+      <a
+  href="https://www.westfjords.is/en/service/tungudalur-camping-ground"
+  target="_blank"
+>
+Ísafjörður Camping  </a>
+
+    </div>
+
+  </div>
+</div>
+<div class="region-box" onclick="this.classList.toggle('active')">
+
+<div class="region-preview">
+
+  <h3>
+    Norðurland Vestra
+  </h3>
+
+  <p>
+    Sauðárkrókur • Blönduós
+  </p>
+
+</div>
+
+<div class="region-dropdown">
+
+  <div class="dropdown-section">
+
+    <h4>
+      Restaurants
+    </h4>
+
+    <a
+  href="https://hotelblonduos.is/restaurant/"
+  target="_blank"
+>
+Sýslumaðurinn  </a>
+    <a
+  href="https://www.facebook.com/GrandinnBarandBed/?_rdr"
+  target="_blank"
+>
+Grand-Inn Bar  </a>
+
+  </div>
+
+  <div class="dropdown-section">
+
+    <h4>
+      Attractions
+    </h4>
+
+    <a
+  href="https://www.northiceland.is/is/stadur/hvitserkur"
+  target="_blank"
+>
+Hvítserkur </a>
+    <a
+  href="https://selasetur.is/en/the-seal-circle/"
+  target="_blank"
+>
+Seal Circle </a>
+
+  </div>
+
+  <div class="dropdown-section">
+
+    <h4>
+      Camping
+    </h4>
+
+    <a
+  href="https://gladheimar.is/"
+  target="_blank"
+>
+Blönduós Camping </a>
+
+  </div>
+
+</div>
+
+</div>
+
+<div class="region-box" onclick="this.classList.toggle('active')">
+
+<div class="region-preview">
+
+  <h3>
+    Norðurland Eystra
+  </h3>
+
+  <p>
+    Akureyri • Húsavík
+  </p>
+
+</div>
+
+<div class="region-dropdown">
+
+  <div class="dropdown-section">
+
+    <h4>
+      Restaurants
+    </h4>
+
+    <a
+  href="https://strikid.is/"
+  target="_blank"
+>
+Strikið </a>
+<a
+href="https://www.facebook.com/naustid"
+target="_blank"
+>
+Naustið </a>
+  </div>
+
+  <div class="dropdown-section">
+
+    <h4>
+      Attractions
+    </h4>
+
+    <a
+    href="https://www.earthlagoon.is/"
+    target="_blank"
+  >
+  Earth Lagoon Mývatn </a>
+    <a
+    href="https://www.northsailing.is/"
+    target="_blank"
+  >
+   Whale Watching </a>
+  </div>
+
+  <div class="dropdown-section">
+
+    <h4>
+      Camping
+    </h4>
+
+    <a
+  href="https://www.hamrar.is/"
+  target="_blank"
+>
+Hamrar Camping  </a>
+
+  </div>
+
+</div>
+
+</div>
+
+<div class="region-box" onclick="this.classList.toggle('active')">
+
+<div class="region-preview">
+
+  <h3>
+    Austurland
+  </h3>
+
+  <p>
+    Egilsstaðir • Seyðisfjörður
+  </p>
+
+</div>
+
+<div class="region-dropdown">
+
+  <div class="dropdown-section">
+
+    <h4>
+      Restaurants
+    </h4>
+
+    <a
+  href="https://askurpizzeria.is/"
+  target="_blank"
+>
+Askur
+  </a>
+    <a
+  href="https://www.skriduklaustur.is/is/"
+  target="_blank"
+>
+Klausturkaffi
+  </a>
+  </div>
+
+  <div class="dropdown-section">
+
+    <h4>
+      Attractions
+    </h4>
+
+    <a
+  href="https://studlagil.is/"
+  target="_blank"
+>
+Stuðlagil
+  </a>
+    <a
+    href="https://www.vokbaths.is/"
+    target="_blank"
+  >
+  Vök Baths
+    </a>
+  </div>
+
+  <div class="dropdown-section">
+
+    <h4>
+      Camping
+    </h4>
+
+    <a
+  href="https://campegilsstadir.is/"
+  target="_blank"
+>
+Egilsstaðir Campsite
+  </a>
+
+  </div>
+
+</div>
+
+</div>
+
+<div class="region-box" onclick="this.classList.toggle('active')">
+
+<div class="region-preview">
+
+  <h3>
+    Suðurland
+  </h3>
+
+  <p>
+    Vík • Selfoss • Höfn
+  </p>
+
+</div>
+
+<div class="region-dropdown">
+
+  <div class="dropdown-section">
+
+    <h4>
+      Restaurants
+    </h4>
+
+    <a
+  href="https://blackcrustpizzeria.com/"
+  target="_blank"
+>
+ Black Crust Pizza
+</a>
+    <a
+    href="https://fridheimar.is/"
+    target="_blank"
+  >
+  Friðheimar  </a>    <a
+  href="https://pakkhus.is/"
+  target="_blank"
+>
+Pakkhús </a>
+
+
+  </div>
+
+  <div class="dropdown-section">
+
+    <h4>
+      Attractions
+    </h4>
+
+    <a
+  href="https://www.south.is/en/place/skogafoss-waterfall"
+  target="_blank"
+>
+ Skógafoss
+</a>
+<a
+  href="https://icelagoon.is/"
+  target="_blank"
+>
+Jökulsárlón
+</a>
+  </div>
+
+  <div class="dropdown-section">
+
+    <h4>
+      Camping
+    </h4>
+
+    <a
+    href="https://www.vatnajokulsthjodgardur.is/en/areas/skaftafell/tjaldsvaedid-i-skaftafelli"
+    target="_blank"
+  >
+  Skaftafell Camping
+    </a>
+
+  </div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<div class="region-box assistant-box">
+
+<div class="region-preview">
+
+  <h3>
+    Your Virtual Guide
+  </h3>
+
+  <p>
+    Ask about weather, routes,
+    restaurants, hidden gems
+    and Iceland travel tips.
+  </p>
+
+</div>
+
+</div>
+
+<footer class="copyright">
+
+  © 2026 Designed & Developed by Aleksandra Skorek
+
+</footer>
