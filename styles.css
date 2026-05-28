@@ -499,40 +499,47 @@ document.querySelector('.weather-bg{
 
   min-height:320px;
 }
-
-
-if(weatherCode >= 71){
-
-  card.style.backgroundImage =
-  "url('snow.jpeg')";
-} 
-else if(weatherCode >= 51){
-
-  card.style.backgroundImage =
-  "url('rain.jpg')";
-}
-
-else if(weatherCode >= 1){
-
-  card.style.backgroundImage =
-  "url('cloudy.jpeg')";
-}
-else{
-
-  card.style.backgroundImage =
-  "url('sunny.jpg')";
-}
 @media(max-width:768px){
 
+  body{
+    overflow-x:hidden;
+  }
+
+  h1{
+    font-size:72px;
+    line-height:0.95;
+  }
+
+  .description{
+    font-size:18px;
+    padding:0 20px;
+  }
+
+  .hero{
+    padding-top:40px;
+  }
+
   .weather-card{
+
+    width:85%;
+
+    margin:40px auto;
 
     min-height:260px;
 
     border-radius:32px;
+
+    background-position:center;
+
+    background-size:cover;
   }
 
   .weather-card h2{
-
     font-size:72px;
+  }
+
+  .btn{
+    width:82%;
+    margin:12px auto;
   }
 }
